@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class ImageController {
 	@Autowired
 	private Environment environment;
-	@GetMapping("/images")
+	@GetMapping("/student-pool-images/images")
 	public ResponseEntity<?> images(){
 		Map<String, String> images=new LinkedHashMap<>();
 		images.put("Shiva", "Shiva.jpg");
